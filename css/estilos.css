@@ -272,7 +272,8 @@ body{
     text-align: center;
     background: #34495E ;
     color: #fff;
-    padding: 10px 0;
+    padding-top: 25px;
+    padding-bottom: 10px;
 }
 
 .containerQ{
@@ -288,12 +289,12 @@ body{
     margin: 10px 0;
     font-size: 25px ;
 }
-
+/*
 .video{
     margin-top: 1rem;
     margin: 0 auto ;
     color: black;
-    border-radius: 100px;
+    
     cursor: pointer;
     color: black;
     background-color:#76d7c8;
@@ -302,7 +303,9 @@ body{
     overflow: hidden;
     gap: 1em;
     justify-items: center;
+    
 }
+*/
 .pregunta1V{
     
     
@@ -324,7 +327,7 @@ body{
     border-radius: 7px;
     
     border: 1px dashed #ccc;
-    margin-bottom: 3px;
+    margin-bottom: 10px;
 }
 .alternativaLista{
     display: block;
@@ -338,7 +341,7 @@ body{
     background: #B3B6B7;
     cursor: pointer;
 }
-
+/*
 .botonQ{
     width: 80%;
     display: block;
@@ -355,7 +358,7 @@ button:hover{
     background: #000;
     color: #fff;
 }
-
+*/
 .resultado{
     text-align: center;
 }
@@ -687,14 +690,12 @@ button:hover{
 }
 
 
- #texto{
- color:black;
- }
- #texto ul a{
- color:blue;
- text-decoration:none
- }
- a:hover{
- text-decoration:underline;
- color:green;
- }
+.menu-fixed {
+	position:fixed;
+	z-index:1000;
+	top:0;
+	/*max-width:1000px;*/
+	left:0;
+	width:100%;
+	box-shadow:0px 4px 3px rgba(0,0,0,.5);
+}

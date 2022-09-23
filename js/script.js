@@ -55,7 +55,9 @@ function corregir(pxPantalla){
         document.getElementById("input10").disabled = true;
         document.getElementById("input11").disabled = true;
         document.getElementById("input12").disabled = true;
+        document.getElementById("bot").disabled = true;
         $('.video').css("display","");
+
         
         
         
@@ -69,7 +71,7 @@ function corregir(pxPantalla){
     
     
 }
-
+/*
 const colorSwitch = document.querySelector('#switch input[type="checkbox"]');
 function cambiaTema(ev){
     if(ev.target.checked){
@@ -79,7 +81,7 @@ function cambiaTema(ev){
     }
 }
 colorSwitch.addEventListener('change', cambiaTema);
-
+*/
 $(window).scroll(function() {
     if ($(this).scrollTop() > 300) {
         $('.botonQ').fadeIn('slow');
@@ -99,4 +101,20 @@ $('.botonQ').click(function(event) {
         $('.pregunta1V').css("display","");
         $('.pregunta1V').fadeIn('slow');
         $('#video1').css("display","none");
+    });
+
+
+    $(document).ready(function(){
+        var altura = $('.menuP').offset().top;
+        
+        $(window).on('scroll', function(){
+            if ( $(window).scrollTop() > altura ){
+                $('.menuP').addClass('menu-fixed');
+            } else {
+                $('.menuP').removeClass('menu-fixed');
+            }
+        });
+        $("#bot").click(function(){
+            $(".botonQ").addClass("disabled");
+        });
     });
