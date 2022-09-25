@@ -6,14 +6,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pre-PAES</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
-
-    <p>hola mundo</p>
-
+    <header>
+        <nav class="navbar sticky-top navbar-expand-md navbar-dark" data-spy="affix" data-offset-top="30" style="background-color: #283747;">
+          <div class="container-md">
+            <!-- icono o nombre -->
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+            <a class="navbar-brand" href="#">
+              <i class="bi bi-calculator"></i>
+              <span class="text-warning">Pre-PAES</span>
+            </a>
+                
+            <!-- boton del menu -->
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+              <!-- elementos del menu colapsable -->
+    
+            <div class="collapse navbar-collapse" id="menu">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="inicio-sesion.html">Ensayo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contactoo">Contacto</a>
+                </li>
+              </ul>
+    
+              <hr class="d-md-none text-white-50">
+    
+               <!-- enlaces redes sociales -->
+    
+              <ul class="navbar-nav  ">    
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-person-fill "></i>
+                    <span>Usuario</span> 
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="inicio-sesion.html">Iniciar Sesión</a></li>
+                  </ul>
+                </li>
+    
+              </ul>
+              
+             <!--boton Informacion --> 
+            </div>
+         
+          </div>  
+        </nav>
+    </header>
 
-</body>
+    <main class="bg-img overflow-scroll" ><!-- Imagen de fondo -->
+
+      <div class="container">
+        <section class="bienvenida">
+          <h1>¡Bienvenido a Pre-Paes! </h1>
+          <h2>Esta es una plataforma online que te ayudara a preparte para rendir la mejor PAES de matemáticas de tu vida</h2>  
+        </section>
+
+        <section class="registro">
+          <a class="btn btn-primary" href="inicio-sesion.html">¿Primera vez aquí?  ¡Registrate!</a>
+        </section>
+      </div>
+        <!-- carrusel -->
+        <div class="row justify-content-center">
+          <div class="col-md-8 ">
+            <div id="carrusel" class="carousel slide" data-bs-ride="true">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carrusel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carrusel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carrusel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carrusel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/geometria-2.jpg" class="d-block w-100" alt="Slide 1">
+                  <div class="carousel-caption ">
+                    <a href="inicio-sesion.html"><p>Practica <br> Geometría</p></a>
+                    
+                  </div>              
+                </div>
+                <div class="carousel-item">
+                  <img id="algebra" src="img/algebra.jpg" class="d-block w-100" alt="Slide 2">
+                  <div class="carousel-caption ">
+                    <a href="inicio-sesion.html">Practica <br> Algebra</a>
+                  </div>              
+                </div>
+                <div class="carousel-item">
+                  <img src="img/probabilidad.jpg" class="d-block w-100" alt="Slide 3">
+                  <div class="carousel-caption ">
+                    <a href="inicio-sesion.html">Practica <br> Probabilidades</a>
+                    
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="img/numeros.jpg" class="d-block w-100" alt="Slide 4">
+                  <div class="carousel-caption ">
+                    <a href="inicio-sesion.html">Practica <br> Números</a>                      
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+        </div>            
+      </div>
+
+      <div class="salto"></div>
+
+      <section class="container-fluid diferencia">
+        <article>
+          <h2>¿Qué nos diferencia de las otras plataformas?</h2>
+          <p>Pre-Paes busca brindarte más opciones a la hora de hacer ensayos de matemáticas, permitiéndote seleccionar 
+            entre un ensayo general de toda la materia o de alguna especifica. Además, cada pregunta incluida en estas pruebas 
+            contiene un desarrollo de la solución explicada en video, para ayudarte de mejor manera a aprender los temas en los 
+            que estes más débil. 
+          </p>
+        </article>
+        <div class="salto"></div>
+        </article>
+          <div id=contactoo class="contacto">
+            <h2>Contactanos</h2>
+            <p>Puedes encontrarnos en el siguiente correo: <br> prepaes@gmail.com</p>
+          </div>            
+        </article>
+      </section>
+      
+      <div class="salto"></div>
+      
+    </main>
+    
+
+    <footer>
+      <div class="row align-items-center">
+        <div class="col-md">
+          <p>&copy;Grupo Pre-Paes 2022</p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
 </html>

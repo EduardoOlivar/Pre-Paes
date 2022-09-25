@@ -1,0 +1,100 @@
+$gradiente-uno:rgba(247, 162, 6, 0.6);
+$gradiente-dos:rgba(5, 122, 126, 0.6);
+$color-principal: #283747;
+$movil: 992px;
+
+/* div[class^="col-"]{
+    background-color: green;
+    border: 1px solid black;
+} */
+
+main[class^="bg-img"]{
+    background-image:linear-gradient(to bottom, $gradiente-uno, $gradiente-dos), url('../img/estudiando.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.registro{
+    padding: 10px;
+    text-align: center;
+    
+    .btn-primary{
+        /* color: #ffc107 !important; */
+        background-color: #cc12b9 !important;
+        border: #cc12b9 !important;
+    }
+}
+
+.container{
+    position: center;
+    padding-top: 20px;
+    /* padding-left: 20%; */
+    h1,h2{
+        text-align: center;
+    }
+}
+
+@mixin carrusel-movil-text {
+    @media (max-width: $movil) {
+        @content
+    }    
+}
+
+#algebra{
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+
+.carousel-caption{
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+    a, a:active{
+        font-size: 50px;
+        color: white;
+        text-decoration-line: none;
+    }
+    a:hover{
+        color: orange;
+    } 
+
+}
+
+.salto{
+    height: 50px;
+}
+.container-fluid{
+    background-image:linear-gradient(to bottom, rgb(40,55,71,0.6), rgb(40,55,71,0.6));
+}
+
+.diferencia{    
+    color:white;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    h2{
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+    p{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+.contacto{
+    border-top: 1px solid white;
+}
+
+footer{
+    background-color: $color-principal;
+    color: white;
+    border-top: 1px solid white;
+    p{
+        padding-top: 5px;
+        text-align: center;
+    }
+}
