@@ -1,12 +1,22 @@
-/* div[class^="col-"]{
-    background-color: green;
-    border: 1px solid black;
-} */
-main[class^=bg-img] {
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -ms-overflow-style: none; /*oculta scrollbar IE and Edge */
+  scrollbar-width: none; /* oculta scrollbar Firefox */
   background-image: linear-gradient(to bottom, rgba(247, 162, 6, 0.6), rgba(5, 122, 126, 0.6)), url("../img/estudiando.jpg");
   height: 100vh;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* oculta scrollbar Chrome, Safari and Opera */
 }
 
 .registro {

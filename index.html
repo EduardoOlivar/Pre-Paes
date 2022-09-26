@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body class="bg-img">
     <header>
         <nav class="navbar sticky-top navbar-expand-md navbar-dark" data-spy="affix" data-offset-top="30" style="background-color: #283747;">
           <div class="container-md">
@@ -21,8 +21,8 @@
             </a>
                 
             <!-- boton del menu -->
-    
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- aria-controls="navbarSupportedContent" -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"  aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
     
@@ -34,7 +34,10 @@
                   <a class="nav-link active" aria-current="page" href="inicio-sesion.html">Ensayo</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#contactoo">Contacto</a>
+                  <a class="nav-link active" aria-current="page" href="#nosotros">Acerca de</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contacto">Contacto</a>
                 </li>
               </ul>
     
@@ -62,7 +65,7 @@
         </nav>
     </header>
 
-    <main class="bg-img overflow-scroll" ><!-- Imagen de fondo -->
+    <main  ><!-- Imagen de fondo -->
 
       <div class="container">
         <section class="bienvenida">
@@ -70,9 +73,9 @@
           <h2>Esta es una plataforma online que te ayudara a preparte para rendir la mejor PAES de matemáticas de tu vida</h2>  
         </section>
 
-        <section class="registro">
+        <div class="registro">
           <a class="btn btn-primary" href="inicio-sesion.html">¿Primera vez aquí?  ¡Registrate!</a>
-        </section>
+        </div>
       </div>
         <!-- carrusel -->
         <div class="row justify-content-center">
@@ -126,36 +129,36 @@
 
       <div class="salto"></div>
 
-      <section class="container-fluid diferencia">
+      <div class="container-fluid diferencia">
         <article>
           <h2>¿Qué nos diferencia de las otras plataformas?</h2>
-          <p>Pre-Paes busca brindarte más opciones a la hora de hacer ensayos de matemáticas, permitiéndote seleccionar 
+          <p id="nosotros">Pre-Paes busca brindarte más opciones a la hora de hacer ensayos de matemáticas, permitiéndote seleccionar 
             entre un ensayo general de toda la materia o de alguna especifica. Además, cada pregunta incluida en estas pruebas 
             contiene un desarrollo de la solución explicada en video, para ayudarte de mejor manera a aprender los temas en los 
             que estes más débil. 
           </p>
         </article>
         <div class="salto"></div>
-        </article>
-          <div id=contactoo class="contacto">
-            <h2>Contactanos</h2>
-            <p>Puedes encontrarnos en el siguiente correo: <br> prepaes@gmail.com</p>
+        <article>
+          <div  class="contacto">
+            <h2 >Contactanos</h2>
+            <p id=contacto>Puedes encontrarnos en el siguiente correo: <br> prepaes@gmail.com</p>
           </div>            
         </article>
-      </section>
+        <div class="salto"></div>
+        
+      </div>
       
-      <div class="salto"></div>
       
     </main>
     
-
-    <footer>
-      <div class="row align-items-center">
-        <div class="col-md">
-          <p>&copy;Grupo Pre-Paes 2022</p>
-        </div>
+    <footer class="text-center text-lg-start bg-dark text-muted">
+      <div class="text-center p-4 " >
+        © 2022 Copyright:
+        <a class="text-reset fw-bold" href="#" >Grupo Pre-Paes</a>
       </div>
-    </footer>
+  </footer>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   </body>
 </html>

@@ -3,17 +3,28 @@ $gradiente-dos:rgba(5, 122, 126, 0.6);
 $color-principal: #283747;
 $movil: 992px;
 
-/* div[class^="col-"]{
-    background-color: green;
-    border: 1px solid black;
-} */
-
-main[class^="bg-img"]{
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -ms-overflow-style: none;/*oculta scrollbar IE and Edge */
+    scrollbar-width: none; /* oculta scrollbar Firefox */    
     background-image:linear-gradient(to bottom, $gradiente-uno, $gradiente-dos), url('../img/estudiando.jpg');
     height: 100vh;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+
 }
+
+body::-webkit-scrollbar {
+    display: none;/* oculta scrollbar Chrome, Safari and Opera */
+  }
+
+
 
 .registro{
     padding: 10px;
@@ -63,7 +74,8 @@ main[class^="bg-img"]{
 
 .salto{
     height: 50px;
-}
+} 
+
 .container-fluid{
     background-image:linear-gradient(to bottom, rgb(40,55,71,0.6), rgb(40,55,71,0.6));
 }
