@@ -113,7 +113,6 @@ let formularioLoginInput = document.querySelector(".login");
 let formularioRegistroInput = document.querySelector(".register");
 
 function registro() {
-
   if (window.innerWidth > 850) {
     formularioRegistro.style.display = "block";
     contenedorLoginRegistro.style.left = "410px";
@@ -130,7 +129,6 @@ function registro() {
   }
 }
 function login() {
-
   if (window.innerWidth > 850) {
     formularioRegistro.style.display = "none";
     contenedorLoginRegistro.style.left = "10px";
@@ -160,13 +158,12 @@ function anchoPagina() {
   }
 }
 
-function ValidarDatos(){
-    let mailErr = $("#correo").val();
-    let passErr = $("#password").val();
-    let userErr = $("#user").val();
+function ValidarDatos() {
+  let mailErr = $("#correo").val();
+  let passErr = $("#password").val();
+  let userErr = $("#user").val();
 
-    if(mailErr ==""){
-        $(".mailErr").html("Por favor ingresa un correo")
-    }
-
+  if (mailErr == "") {
+    $(".mailErr").html("Por favor ingresa un correo");
+  }
 }

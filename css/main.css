@@ -1,0 +1,628 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,700&display=swap");
+.contenedor-forms {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+}
+
+/*Scroll personalizado*/
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #1B2631;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #f0ad4e;
+  border-radius: 5px;
+}
+
+.cuadro-atras {
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  background-image: linear-gradient(to bottom, rgba(79, 15, 196, 0.6), rgba(216, 46, 202, 0.6));
+}
+
+.cuadro-atras div {
+  margin: 100px 40px;
+  color: white;
+  transition: all 400ms;
+}
+
+.cuadro-atras div p,
+.cuadro-atras div button {
+  margin-top: 30px;
+}
+
+.cuadro-atras div h3 {
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.cuadro-atras button {
+  padding: 10px 40px;
+  border: 2px solid #fff;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  outline: none;
+  transition: all 350ms;
+}
+
+.cuadro-atras button:hover {
+  background: #fff;
+  color: rgb(161, 199, 38);
+}
+
+.contenedor-login-registro-form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 380px;
+  position: relative;
+  top: -190px;
+  left: 10px;
+  transition: left 400ms cubic-bezier(0.2, 0.888, 0.29, 1.2);
+}
+
+.contenedor-login-registro-form form {
+  width: 100%;
+  padding: 80px 20px;
+  background-image: linear-gradient(to bottom, rgba(216, 46, 202, 0.6), rgba(79, 15, 196, 0.6));
+  position: absolute;
+  border-radius: 20px;
+}
+
+.contenedor-login-registro-form form h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.contenedor-login-registro-form input {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  background: #f2f2f2;
+  font-size: 16px;
+  outline: none;
+}
+
+.contenedor-login-registro-form form button {
+  padding: 10px 40px;
+  margin-top: 40px;
+  border: none;
+  font-size: 14px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.formulario-login {
+  opacity: 1;
+  display: block;
+}
+
+.formulario-registro {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .cuadro-atras {
+    max-width: 350px;
+    height: 300px;
+    flex-direction: column;
+    margin: auto;
+  }
+  .cuadro-atras div {
+    margin: 0;
+    position: absolute;
+  }
+  .contenedor-login-registro-form {
+    top: -10px;
+    left: -5px;
+    margin: auto;
+  }
+  .contenedor-login-registro-form form {
+    position: relative;
+  }
+}
+/* div[class^="col-"]{
+    background-color: green;
+    border: 1px solid black;
+} */
+main[class^=bg-img] {
+  background-image: linear-gradient(to bottom, rgba(22, 2, 109, 0.6), rgba(13, 151, 230, 0.6)), url("../img/estudiando.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.registro {
+  padding: 10px;
+  text-align: center;
+}
+.registro .btn-primary {
+  /* color: #ffc107 !important; */
+  background-color: #cc12b9 !important;
+  border: #cc12b9 !important;
+}
+
+.container {
+  position: center;
+  padding-top: 20px;
+  /* padding-left: 20%; */
+}
+.container h1, .container h2 {
+  text-align: center;
+}
+
+#algebra {
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
+
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial;
+}
+.carousel-caption a, .carousel-caption a:active {
+  font-size: 50px;
+  color: white;
+  text-decoration-line: none;
+}
+.carousel-caption a:hover {
+  color: orange;
+}
+
+.container-fluid {
+  background-image: linear-gradient(to bottom, rgba(40, 55, 71, 0.6), rgba(40, 55, 71, 0.6));
+}
+
+.diferencia {
+  color: white;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.diferencia h2 {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+.diferencia p {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.contacto {
+  border-top: 1px solid white;
+}
+
+footer {
+  background-color: #283747;
+  color: white;
+  border-top: 1px solid white;
+}
+footer p {
+  padding-top: 5px;
+  text-align: center;
+}
+
+.contenedor-forms {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+}
+
+/*Scroll personalizado*/
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #1B2631;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #f0ad4e;
+  border-radius: 5px;
+}
+
+.cuadro-atras {
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  background-image: linear-gradient(to bottom, rgba(79, 15, 196, 0.6), rgba(216, 46, 202, 0.6));
+}
+
+.cuadro-atras div {
+  margin: 100px 40px;
+  color: white;
+  transition: all 400ms;
+}
+
+.cuadro-atras div p,
+.cuadro-atras div button {
+  margin-top: 30px;
+}
+
+.cuadro-atras div h3 {
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.cuadro-atras button {
+  padding: 10px 40px;
+  border: 2px solid #fff;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  outline: none;
+  transition: all 350ms;
+}
+
+.cuadro-atras button:hover {
+  background: #fff;
+  color: rgb(161, 199, 38);
+}
+
+.contenedor-login-registro-form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 380px;
+  position: relative;
+  top: -190px;
+  left: 10px;
+  transition: left 400ms cubic-bezier(0.2, 0.888, 0.29, 1.2);
+}
+
+.contenedor-login-registro-form form {
+  width: 100%;
+  padding: 80px 20px;
+  background-image: linear-gradient(to bottom, rgba(216, 46, 202, 0.6), rgba(79, 15, 196, 0.6));
+  position: absolute;
+  border-radius: 20px;
+}
+
+.contenedor-login-registro-form form h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.contenedor-login-registro-form input {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  background: #f2f2f2;
+  font-size: 16px;
+  outline: none;
+}
+
+.contenedor-login-registro-form form button {
+  padding: 10px 40px;
+  margin-top: 40px;
+  border: none;
+  font-size: 14px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.formulario-login {
+  opacity: 1;
+  display: block;
+}
+
+.formulario-registro {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .cuadro-atras {
+    max-width: 350px;
+    height: 300px;
+    flex-direction: column;
+    margin: auto;
+  }
+  .cuadro-atras div {
+    margin: 0;
+    position: absolute;
+  }
+  .contenedor-login-registro-form {
+    top: -10px;
+    left: -5px;
+    margin: auto;
+  }
+  .contenedor-login-registro-form form {
+    position: relative;
+  }
+}
+/* div[class^="col-"]{
+    background-color: green;
+    border: 1px solid black;
+} */
+main[class^=bg-img] {
+  background-image: linear-gradient(to bottom, rgba(22, 2, 109, 0.6), rgba(13, 151, 230, 0.6)), url("../img/estudiando.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.registro {
+  padding: 10px;
+  text-align: center;
+}
+.registro .btn-primary {
+  /* color: #ffc107 !important; */
+  background-color: #cc12b9 !important;
+  border: #cc12b9 !important;
+}
+
+.container {
+  position: center;
+  padding-top: 20px;
+  /* padding-left: 20%; */
+}
+.container h1, .container h2 {
+  text-align: center;
+}
+
+#algebra {
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
+
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial;
+}
+.carousel-caption a, .carousel-caption a:active {
+  font-size: 50px;
+  color: white;
+  text-decoration-line: none;
+}
+.carousel-caption a:hover {
+  color: orange;
+}
+
+.container-fluid {
+  background-image: linear-gradient(to bottom, rgba(40, 55, 71, 0.6), rgba(40, 55, 71, 0.6));
+}
+
+.diferencia {
+  color: white;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.diferencia h2 {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+.diferencia p {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.contacto {
+  border-top: 1px solid white;
+}
+
+footer {
+  background-color: #283747;
+  color: white;
+  border-top: 1px solid white;
+}
+footer p {
+  padding-top: 5px;
+  text-align: center;
+}
+
+:root {
+  --padding-container: 100px 0;
+  --color-title: #001a49;
+  --color-fuente: #212F3C;
+  --color-fondo: #ffffff;
+}
+
+[tema=dark] {
+  --color-fuente: #ffffff;
+  --color-fondo: #212F3C;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  background-color: var(--color-fondo);
+  color: var(--color-fuente);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: var(--padding-container);
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 800px;
+  position: relative;
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  color: white;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5490196078) 0%, rgba(0, 0, 0, 0.5490196078) 100%), url(../images/paes.png);
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+  z-index: -1;
+}
+
+.hero_container {
+  max-width: 800px;
+  --padding-container:0;
+  display: grid;
+  grid-auto-rows: max-content;
+  align-content: center;
+  gap: 1em;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.hero_title {
+  font-size: 3rem;
+}
+
+.hero_paragraph {
+  margin-bottom: 20px;
+}
+
+.cta {
+  display: inline-block;
+  background-color: #2091f9;
+  justify-self: center;
+  color: white;
+  text-decoration: none;
+  padding: 13px 30px;
+  border-radius: 32px;
+}
+
+/*quiz*/
+.heroQ {
+  text-align: center;
+  background: #34495E;
+  color: #fff;
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+.containerQ {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.preguntas {
+  border: 2px solid #34495E;
+  border-radius: 7px;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 25px;
+}
+
+/*
+.video{
+    margin-top: 1rem;
+    margin: 0 auto ;
+    color: black;
+
+    cursor: pointer;
+    color: black;
+    background-color:#76d7c8;
+    text-decoration: none;
+    display: grid;
+    overflow: hidden;
+    gap: 1em;
+    justify-items: center;
+
+}
+*/
+.pregunta1V {
+  border-radius: 7px;
+  border: 5px dashed #34495E;
+  display: grid;
+  gap: 1em;
+  justify-items: center;
+  width: 500;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.alternativa {
+  display: block;
+  padding: 7px;
+  border-radius: 7px;
+  border: 1px dashed #ccc;
+  margin-bottom: 10px;
+}
+
+.alternativaLista {
+  display: block;
+  padding: 7px;
+  border-radius: 7px;
+  border: 1px dashed #ccc;
+  margin-bottom: 3px;
+}
+
+.alternativa:hover {
+  background: #B3B6B7;
+  cursor: pointer;
+}
+
+/*
+.botonQ{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding: 10px;
+
+    background-color: #76d7c8;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+button:hover{
+    background: #000;
+    color: #fff;
+}
+*/
+.resultado {
+  text-align: center;
+}
+
+#resultado {
+  font-size: 30px;
+  color: darkred;
+}
+
+#resultado2 {
+  font-size: 30px;
+  color: darkred;
+}
+
+.pregunta {
+  margin-bottom: 15px;
+}
+
+/*# sourceMappingURL=main.css.map */
