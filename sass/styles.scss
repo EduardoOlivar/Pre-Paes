@@ -21,6 +21,18 @@ body{
     color:var(--color-fuente); 
 }
 
+/*Scroll personalizado*/
+
+body::-webkit-scrollbar{
+    width: 10px;
+    background-color:#1B2631;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #f0ad4e;
+    border-radius: 5px;
+}
+
 .container{
     width: 90%;
     max-width: 1200px;
@@ -123,20 +135,21 @@ body{
     
 }
 */
-.pregunta1V{
+
+.video-respuesta{
     
     
     border-radius: 7px;
     border: 5px dashed #34495E ;
-    display: grid;
+    display: flex;
     gap: 1em;
     justify-items: center;
-    width:500;
+    width: 70%;
     overflow: hidden;
     margin: 0 auto ;
     margin-top: 1rem;
 }
-    
+
 
 .alternativa{
     display: block;

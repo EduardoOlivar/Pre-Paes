@@ -11,11 +11,13 @@
   --color-fondo: #212F3C;
 }
 
-body{
-  font-family: 'Poppins', sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
- 
+  background-color: var(--color-fondo);
+  color: var(--color-fuente);
 }
+
 /*Scroll personalizado*/
 body::-webkit-scrollbar {
   width: 10px;
@@ -27,8 +29,12 @@ body::-webkit-scrollbar-thumb {
   border-radius: 5px;
 }
 
-.featurette-divider{
-  margin: 5rem 0;;
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: var(--padding-container);
 }
 
 .hero {
@@ -51,7 +57,8 @@ body::-webkit-scrollbar-thumb {
   height: 100%;
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5490196078) 0%, rgba(0, 0, 0, 0.5490196078) 100%), url(../images/paes.png);
   background-size: cover;
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+          clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
   z-index: -1;
 }
 
@@ -59,6 +66,7 @@ body::-webkit-scrollbar-thumb {
   max-width: 800px;
   --padding-container:0;
   display: grid;
+  grid-auto-rows: -webkit-max-content;
   grid-auto-rows: max-content;
   align-content: center;
   gap: 1em;
@@ -87,7 +95,7 @@ body::-webkit-scrollbar-thumb {
 /*quiz*/
 .heroQ {
   text-align: center;
-  background: #273746 ;
+  background: #34495E;
   color: #fff;
   padding-top: 25px;
   padding-bottom: 10px;
@@ -97,7 +105,6 @@ body::-webkit-scrollbar-thumb {
   max-width: 900px;
   margin: auto;
   padding: 20px;
-  
 }
 
 .preguntas {
@@ -192,6 +199,4 @@ button:hover{
 
 .pregunta {
   margin-bottom: 15px;
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

@@ -1,4 +1,4 @@
-let correctas = [1,3,3];
+let correctas = [1,3,2,4];
 
 //arreglo donde se guardean las respuestas del usaurio
 let opcion_elegida=[];
@@ -55,8 +55,14 @@ function corregir(pxPantalla){
         document.getElementById("input10").disabled = true;
         document.getElementById("input11").disabled = true;
         document.getElementById("input12").disabled = true;
+        document.getElementById("input13").disabled = true;
+        document.getElementById("input14").disabled = true;
+        document.getElementById("input15").disabled = true;
+        document.getElementById("input16").disabled = true;
         document.getElementById("bot").disabled = true;
-        $('.video').css("display","");
+        $('.botonvideo').css("display","");
+        $('.botonvideo2').css("display","");
+        $('.botonvideo3').css("display","");
 
         
         
@@ -65,7 +71,7 @@ function corregir(pxPantalla){
         
       
     }
-    document.getElementById("resultado").innerHTML = cantidad_correctas;
+    /*document.getElementById("resultado").innerHTML = cantidad_correctas;*/
     
     
     
@@ -95,15 +101,31 @@ $('.botonQ').click(function(event) {
 });
 
 
-    $('.video').css("display","none");
+    $('.botonvideo').css("display","none");
+    $('.botonvideo2').css("display","none");
+    $('#video02').css("display","none");
+    $('.botonvideo3').css("display","none");
+    $('#video03').css("display","none");
 
     $("#video1").on("click", function(){
-        $('.pregunta1V').css("display","");
-        $('.pregunta1V').fadeIn('slow');
+        $('#video01').css("display","");
+        $('#video01').fadeIn('slow');
         $('#video1').css("display","none");
     });
 
+    $("#video2").on("click", function(){
+        $('#video02').css("display","");
+        $('#video02').fadeIn('slow');
+        $('#video2').css("display","none");
+    });
 
+    $("#video3").on("click", function(){
+        $('#video03').css("display","");
+        $('#video03').fadeIn('slow');
+        $('#video3').css("display","none");
+    });
+
+   /*
     $(document).ready(function(){
         var altura = $('.menuP').offset().top;
         
@@ -118,3 +140,4 @@ $('.botonQ').click(function(event) {
             $(".botonQ").addClass("disabled");
         });
     });
+    */
