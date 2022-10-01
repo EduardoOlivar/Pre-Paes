@@ -33,6 +33,7 @@ function corregir(pxPantalla){
     cantidad_correctas=0;
     cantidad_omitidas=0;
     num_pregunta=0;
+    paes_puntos=250;
     for(i=0;i<correctas.length;i++){
         if(correctas[i]==opcion_elegida[i]){
             cantidad_correctas++;
@@ -41,36 +42,36 @@ function corregir(pxPantalla){
        if(correctas[i]!=opcion_elegida[i]){
         opcion_elegidaO[i].parentNode.style.backgroundColor="#FC6A6A"; 
        }
-       $(".alternativa").removeClass("alternativa");
+             
+      
+    }
+    $(".alternativa").removeClass("alternativa");
         
-        document.getElementById("input01").disabled = true;
-        document.getElementById("input02").disabled = true;
-        document.getElementById("input03").disabled = true;
-        document.getElementById("input04").disabled = true;
-        document.getElementById("input05").disabled = true;
-        document.getElementById("input06").disabled = true;
-        document.getElementById("input07").disabled = true;
-        document.getElementById("input08").disabled = true;
-        document.getElementById("input09").disabled = true;
-        document.getElementById("input10").disabled = true;
-        document.getElementById("input11").disabled = true;
-        document.getElementById("input12").disabled = true;
-        document.getElementById("input13").disabled = true;
-        document.getElementById("input14").disabled = true;
-        document.getElementById("input15").disabled = true;
-        document.getElementById("input16").disabled = true;
-        document.getElementById("bot").disabled = true;
+    document.getElementById("input01").disabled = true;
+    document.getElementById("input02").disabled = true;
+    document.getElementById("input03").disabled = true;
+    document.getElementById("input04").disabled = true;
+    document.getElementById("input05").disabled = true;
+    document.getElementById("input06").disabled = true;
+    document.getElementById("input07").disabled = true;
+    document.getElementById("input08").disabled = true;
+    document.getElementById("input09").disabled = true;
+    document.getElementById("input10").disabled = true;
+    document.getElementById("input11").disabled = true;
+    document.getElementById("input12").disabled = true;
+    document.getElementById("input13").disabled = true;
+    document.getElementById("input14").disabled = true;
+    document.getElementById("input15").disabled = true;
+    document.getElementById("input16").disabled = true;
+    document.getElementById("bot").disabled = true;
+    
         $('.botonvideo').css("display","");
         $('.botonvideo2').css("display","");
         $('.botonvideo3').css("display","");
-
-        
-        
-        
-        
-        
-      
-    }
+        $('.resultado').css("display","");
+        paes_puntos =paes_puntos * cantidad_correctas;
+        document.getElementById("resultado").innerHTML = cantidad_correctas;
+        document.getElementById("resultado2").innerHTML = paes_puntos;
     /*document.getElementById("resultado").innerHTML = cantidad_correctas;*/
     
     
@@ -100,7 +101,7 @@ $('.botonQ').click(function(event) {
     $('html, body').animate({scrollTop: 0}, 600);
 });
 
-
+    $('.resultado').css("display","none");
     $('.botonvideo').css("display","none");
     $('.botonvideo2').css("display","none");
     $('#video02').css("display","none");

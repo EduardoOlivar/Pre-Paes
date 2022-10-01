@@ -11,11 +11,14 @@
   --color-fondo: #212F3C;
 }
 
-body{
-  font-family: 'Poppins', sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
- 
+  position: relative;
+  padding-bottom: 3em;
+  min-height: 100vh;
 }
+
 /*Scroll personalizado*/
 body::-webkit-scrollbar {
   width: 10px;
@@ -27,8 +30,8 @@ body::-webkit-scrollbar-thumb {
   border-radius: 5px;
 }
 
-.featurette-divider{
-  margin: 5rem 0;;
+.featurette-divider {
+  margin: 5rem 0;
 }
 
 .hero {
@@ -87,7 +90,7 @@ body::-webkit-scrollbar-thumb {
 /*quiz*/
 .heroQ {
   text-align: center;
-  background: #273746 ;
+  background: #273746;
   color: #fff;
   padding-top: 25px;
   padding-bottom: 10px;
@@ -97,7 +100,6 @@ body::-webkit-scrollbar-thumb {
   max-width: 900px;
   margin: auto;
   padding: 20px;
-  
 }
 
 .preguntas {
@@ -176,22 +178,75 @@ button:hover{
     color: #fff;
 }
 */
-.resultado {
-  text-align: center;
+.botonE {
+  display: none;
 }
 
-#resultado {
-  font-size: 30px;
-  color: darkred;
-}
-
-#resultado2 {
-  font-size: 30px;
-  color: darkred;
+.botonE:hover {
+  background-color: rgba(0, 0, 0, 0.514);
 }
 
 .pregunta {
   margin-bottom: 15px;
+}
+
+/*# sourceMappingURL=styles.css.map */
+/*Usuario*/
+.card {
+  border: none;
+  border-radius: 10px;
+}
+
+.c-details span {
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  background-color: #eee;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 39px;
+}
+
+.badge span {
+  background-color: #fffbec;
+  width: 60px;
+  height: 25px;
+  padding-bottom: 3px;
+  border-radius: 5px;
+  display: flex;
+  color: #fed85d;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress {
+  height: 10px;
+  border-radius: 10px;
+}
+
+.progress div {
+  background-color: red;
+}
+
+.text1 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.text2 {
+  color: #a5aec0;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
